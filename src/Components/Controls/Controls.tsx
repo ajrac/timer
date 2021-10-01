@@ -1,8 +1,16 @@
 import React from "react";
 
-function Controls(){
+type Props = {
+    setTimeSeconds: Function
+};
+
+function Controls(props:any){
     return(
-        <section></section>
+        <section className = 'controls-container'>
+            <button>Start</button>
+            <button>Pause</button>
+            <button>Reset</button>
+        </section>
     )
 }
 
